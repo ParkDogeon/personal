@@ -1,0 +1,45 @@
+#title{
+
+}
+#title .wrap{
+
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: transparent;
+    transition: 1.2s;  
+    color: transparent;
+  }
+  
+  .box.active {
+    width: 90%;
+    background: transparent;
+    color: black;
+    height: 20rem;
+    font-family: Pretendard;
+  }
+  
+  /* ------------- */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f8f8f8;
+  }
+  
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+  
+  * {
+    font-family: Pretendard;
+  }
