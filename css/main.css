@@ -7,12 +7,14 @@ main{
 section{
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 .block{
   display: block;
 }
 #hello {
     
+  box-sizing: border-box;
   }
   #hello .wrap {
     
@@ -60,12 +62,94 @@ section{
   line-height: 1.5;
   font-size: 18px;
   }
-  #hello .wrap .rightS .sImg {
-    
-  width: 60px;
-  height: 60px;
+  #hello .wrap .rightS .sImg {    
+  width: 90%;
+  height: 100%;
   display: block;
+  background-image: url(../img/back1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.1);
+  margin-top: 30px;
+    transition: 0.7s;
   }
+#hello .wrap .rightS .sImg:hover{
+  opacity: 0.3;
+}
+
+/* 워크 색션 */
+#work {
+  
+  background-color: antiquewhite;
+}
+#work .wrap {
+  
+}
+#work .wrap h2 {
+  
+  font-size: 52px;
+  margin-top: 130px;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+#work .wrap ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+#work .wrap li {
+  width: 80%;
+  height: 80%;
+  display: block;
+  transition: 0.7s;
+  padding: 10px 20px;
+}
+#work .wrap li:hover{
+  transform: scale(1.2);  
+}
+#work .wrap li span {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  border-radius: 25px;
+}
+#work .wrap li span a{
+  
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+#work .wrap li:nth-child(1) span{
+  background-image: url(../img/work-back1.png);
+}
+#work .wrap li:nth-child(2) span{
+  background-image: url(../img/work-back2.png);
+}
+#work .wrap li:nth-child(3) span{
+  background-image: url(../img/work-back3.png);
+}
+#work .wrap li:nth-child(4) span{
+  background-image: url(../img/work-back4.png);
+}
+
+#work .wrap li p {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+
   /* 슬라이드 */
   .slider {
     height: 100%;
@@ -101,7 +185,6 @@ section{
     justify-content: center;
   }
   ul.imgs li img{
-
   width: auto;
   height: auto;
   }
@@ -120,6 +203,7 @@ section{
     height: 20px;
     cursor: pointer;
   }
+
   /* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
   .slider
     input[type="radio"]:nth-child(1):checked

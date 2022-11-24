@@ -7,7 +7,7 @@
 .box {
     width: 10rem;
     height: 10rem;
-    margin: 10rem auto;
+    margin: 15rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,7 @@
     background-color: transparent;
     transition: 1.2s;  
     color: transparent;
+    font-family: Pretendard;
   }
   
   .box.active {
